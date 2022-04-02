@@ -4,9 +4,11 @@ import useTeamsArticles from "../hooks/useTeamsArticles";
 import useTeam from "../hooks/useTeam";
 import { slugify } from "../utils";
 import TeamLogo from "./TeamLogo";
+import Loading from "./Loading";
 
 function useTeamPageData(teamId) {
   const { response: teamNames, loading: loadingTeamNames } = useTeamNames();
+
   const { response: articles, loading: loadingArticles } =
     useTeamsArticles(teamId);
 
@@ -24,8 +26,9 @@ export default function TeamPage() {
   const { teamId } = useParams();
 
   const { teamNames, articles, team, loading } = useTeamPageData(teamId);
+
   if (loading === true) {
-    return <p>LOADING</p>;
+    return <Loading />;
   }
 
   if (!teamNames.includes(teamId)) {

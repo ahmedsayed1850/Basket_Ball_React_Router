@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import usePlayer from "../hooks/usePlayer";
+import Loading from "./Loading";
 
 export default function Player() {
   const { playerId } = useParams();
@@ -7,12 +8,13 @@ export default function Player() {
   const { response: player, loading } = usePlayer(playerId);
 
   if (loading === true) {
-    return null;
+    return <Loading />;
   }
 
   if (!player) {
     return null;
   }
+
   return (
     <div className="panel">
       <img
