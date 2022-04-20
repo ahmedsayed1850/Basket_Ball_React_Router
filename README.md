@@ -1,30 +1,64 @@
-<h1 align="center">
-  <a href="https://ui.dev">
-    <img
-      src="https://ui.dev/images/ambitious-banner-dark.jpg"
-      alt="ui.dev banner" width="600" />
-  </a>
-  <br />
-</h1>
+<h1 align="center">Basket Ball Team using React Router Dom <a href="https://glistening-squirrel-300a41.netlify.app/">Live Demo</a></h1>
 
-<h3 align="center">React Router Course Project - <a href="https://basketball-v6.ui.dev/">Hash History Basketball League</a></h3>
+
+### Project Preview
+
+![](https://i.ibb.co/NKVt3yC/glistening-squirrel-300a41-netlify-app.jpg)
+![](https://i.ibb.co/QbtJkxF/glistening-squirrel-300a41-netlify-app-1.jpg)
+![](https://i.ibb.co/KKDcqQ7/glistening-squirrel-300a41-netlify-app-2.jpg)
+![](https://i.ibb.co/N1xjNt8/glistening-squirrel-300a41-netlify-app-3.jpg)
 
 ### Info
 
-This is the repository for [ui.dev](https://ui.dev)'s "React Router" course project.
-
-For more information on the course, visit __[ui.dev/react-router](https://ui.dev/react-router)__.
+to start this project `git clone [this-git-repo]`
+install all dependiencies by `npm i`
+to start this project `npm start`
+if you want to run it for production `npm run build`
+change API keys with your own this for test only not built for production cases
 
 ### Project
 
-This project is an app for a fictional Basketball league.
+this project is built using react and react router dom it does fetch basket ball team and display them by responding to the
+url queries and routing users to other pages and udpdate the queries
+ __[Basket Ball Team using React Router Dom](https://glistening-squirrel-300a41.netlify.app/)
 
-You can view the final project __[here](https://basketball-v6.ui.dev/)__
+### Folder Structure
 
-### Branches
-
-Every `(Project)` video in the course coincides with a branch in this repo. If you want to compare your code with Tyler's or you just want to play around with the code, check out the different branches.
-
-Below every `(Project)` video in the course will be a direct link to both the commit for that video as well as its branch.
-
-<img align='center' src='https://user-images.githubusercontent.com/2933430/82761769-26e15180-9dba-11ea-9681-8b453d95c9fd.png' width='200' />
+- Home
+   - [README.md](README.md)
+   - __build__
+     - [favicon.ico](build/favicon.ico)
+   - [node\_modules](node_modules)
+   - [package\-lock.json](package-lock.json)
+   - [package.json](package.json)
+   - __public__
+     - [favicon.ico](public/favicon.ico)
+     - [index.html](public/index.html)
+   - __src__
+     - __components__
+       - [App.jsx](src/components/App.jsx)
+       - [Article.jsx](src/components/Article.jsx)
+       - [Articles.jsx](src/components/Articles.jsx)
+       - [Home.jsx](src/components/Home.jsx)
+       - [Loading.jsx](src/components/Loading.jsx)
+       - [Navbar.jsx](src/components/Navbar.jsx)
+       - [Player.jsx](src/components/Player.jsx)
+       - [Players.jsx](src/components/Players.jsx)
+       - [Sidebar.jsx](src/components/Sidebar.jsx)
+       - [Team.jsx](src/components/Team.jsx)
+       - [TeamLogo.jsx](src/components/TeamLogo.jsx)
+       - [TeamPage.jsx](src/components/TeamPage.jsx)
+       - [Teams.jsx](src/components/Teams.jsx)
+     - __hooks__
+       - [useArticle.js](src/hooks/useArticle.js)
+       - [useFetch.js](src/hooks/useFetch.js)
+       - [usePlayer.js](src/hooks/usePlayer.js)
+       - [usePlayerNames.js](src/hooks/usePlayerNames.js)
+       - [usePlayers.js](src/hooks/usePlayers.js)
+       - [useTeam.js](src/hooks/useTeam.js)
+       - [useTeamNames.js](src/hooks/useTeamNames.js)
+       - [useTeamsArticles.js](src/hooks/useTeamsArticles.js)
+     - [index.css](src/index.css)
+     - [index.jsx](src/index.jsx)
+     - __utils__
+       - [index.js](src/utils/index.js)
